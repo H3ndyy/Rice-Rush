@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rice Rush - Delightful Food Experience</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <div class="logo"><i class="fas fa-utensils"></i>Rice Rush</div>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <div class="buttons">
+
+        <button class="btn" id="signInBtn" type="button">Sign In</button>
+        <button class="btn btn-primary" id="signUpBtn" type="button">Sign Up</button>
+
+        <button class="cart-icon" id="cartBtn" type="button" aria-label="Buka keranjang">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+
+      <section class="hero" id="home">
+
+        <div class="hero-text">
+          <h1>Jelajahi Kelezatan Kuliner Terbaik</h1>
+          <p>Nikmati sajian istimewa yang diracik dengan penuh dedikasi. Dari bahan-bahan segar berkualitas hingga kreasi yang menggugah selera, setiap hidangan menghadirkan pengalaman rasa yang tak terlupakan.
+          </p>
+          <a class="btn btn-primary" href="#menu">Explore Menu</a>
+          <a class="btn btn-secondary" href="#contact"><i class="fas fa-phone"></i> Order Now</a>
+        </div>
+
+        <div class="hero-image">
+          <img src="1.png" alt="Gourmet Food Selection" id="heroImage">
+        </div>
+        
+      </section>
+
+      <section class="popular-dishes" id="menu">
+
+        <h2>Popular Menu</h2>
+
+        <div class="dishes">
+
+          <div class="dish" data-img="5.png">
+            <img src="5.png" alt="karee raitsu">
+            <h3>karee raitsu</h3>
+            <p>rich and aromatic japanese curry</p>
+            <span class="price">Rp. 24.000</span>
+            <button class="add-to-cart" data-name="Karee Raitsu" data-price="24000">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+
+
+          <div class="dish" data-img="4.png">
+            <img src="4.png" alt="bulgogi bowl">
+            <h3>bulgogi bowl</h3>
+            <p>Grilled marinated beef with rice</p>
+            <span class="price">Rp. 26.000</span>
+            <button class="add-to-cart" data-name="Bulgogi Bowl" data-price="26000">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+
+          <div class="dish" data-img="2.png">
+            <img src="2.png" alt="kimchi fried rice">
+            <h3>kimchi fried rice</h3>
+            <p>stir-fried rice kimchi and vegetables</p>
+            <span class="price">Rp. 60.000</span>
+            <button class="add-to-cart" data-name="Kimchi Fried Rice" data-price="60000">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+          <div class="dish" data-img="1.png">
+            <img src="1.png" alt="Crispy sambal matah">
+            <h3>Crispy sambal matah</h3>
+            <p>Crispy chicken with healthy vegetables</p>
+            <span class="price">Rp. 30.000</span>
+            <button class="add-to-cart" data-name="Crispy Sambal Matah" data-price="30000">
+              <i class="fas fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section page-section" id="about">
+        <div class="section-heading">
+          <span class="eyebrow">Tentang Kami</span>
+          <h2>Kenalan dengan Rice Rush</h2>
+          <p>Rice Rush menyajikan hidangan nasi yang lezat dengan bahan pilihan dan rasa yang bikin ingin kembali lagi. Pilih menu favoritmu dan nikmati pengalaman makan yang menyenangkan.</p>
+        </div>
+        <div class="about-features">
+          <div class="feature-card"><i class="fas fa-leaf"></i><h3>Bahan Berkualitas</h3><p>Bahan pilihan untuk rasa yang lebih nikmat.</p></div>
+          <div class="feature-card"><i class="fas fa-bowl-rice"></i><h3>Dibuat Segar</h3><p>Hidangan disiapkan dengan penuh perhatian.</p></div>
+          <div class="feature-card"><i class="fas fa-heart"></i><h3>Dibuat dengan Hati</h3><p>Kepuasan pelanggan selalu jadi prioritas.</p></div>
+        </div>
+      </section>
+
+      <section class="gallery-section page-section" id="gallery">
+        <div class="section-heading">
+          <span class="eyebrow">Galeri</span>
+          <h2>Intip Hidangan Kami</h2>
+          <p>Beberapa sajian favorit dari Rice Rush.</p>
+        </div>
+        <div class="gallery-grid">
+          <a href="#menu" aria-label="Lihat menu karee raitsu"><img src="5.png" alt="Karee raitsu"></a>
+          <a href="#menu" aria-label="Lihat menu bulgogi bowl"><img src="4.png" alt="Bulgogi bowl"></a>
+          <a href="#menu" aria-label="Lihat menu kimchi fried rice"><img src="2.png" alt="Kimchi fried rice"></a>
+          <a href="#menu" aria-label="Lihat menu crispy sambal matah"><img src="1.png" alt="Crispy sambal matah"></a>
+          <a href="#menu" aria-label="Lihat hidangan Rice Rush"><img src="3.png" alt="Hidangan Rice Rush"></a>
+          <a href="#menu" aria-label="Lihat pilihan hidangan Rice Rush"><img src="7.png" alt="Pilihan hidangan Rice Rush"></a>
+        </div>
+      </section>
+
+      <section class="contact-section page-section" id="contact">
+        <div class="section-heading">
+          <span class="eyebrow">Hubungi Kami</span>
+          <h2>Ada yang bisa kami bantu?</h2>
+          <p>Hubungi Rice Rush untuk pertanyaan atau informasi pesanan.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div><i class="fas fa-phone"></i><span><strong>Telepon</strong><br>Tambahkan nomor kontak kamu</span></div>
+            <div><i class="fas fa-envelope"></i><span><strong>Email</strong><br>Tambahkan email Rice Rush</span></div>
+            <div><i class="fas fa-location-dot"></i><span><strong>Lokasi</strong><br>Tambahkan alamat restoran</span></div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <label for="contactName">Nama</label>
+            <input id="contactName" name="name" type="text" placeholder="Nama kamu" required>
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" name="email" type="email" placeholder="email@contoh.com" required>
+            <label for="contactMessage">Pesan</label>
+            <textarea id="contactMessage" name="message" rows="4" placeholder="Tulis pesan kamu..." required></textarea>
+            <button class="btn btn-primary" type="submit">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a class="logo" href="#home"><i class="fas fa-utensils"></i>Rice Rush</a>
+        <p>Hidangan lezat untuk menemani harimu.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Jelajahi</h3>
+        <a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About Us</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h3>Ikuti Kami</h3>
+        <div class="social-icons">
+          <a href="#contact" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#contact" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#contact" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; <span id="currentYear"></span> Rice Rush. All rights reserved.</p><a href="#home">Kembali ke atas <i class="fas fa-arrow-up"></i></a></div>
+  </footer>
+
+
+  <!-- Modal interaktif untuk akun dan keranjang -->
+  <div class="modal-backdrop" id="accountModal" hidden>
+    <section class="app-modal" role="dialog" aria-modal="true" aria-labelledby="accountModalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Tutup">&times;</button>
+      <h2 id="accountModalTitle">Sign Up</h2>
+      <p class="modal-intro" id="accountModalIntro">Buat akun demo Rice Rush.</p>
+      <form id="accountForm" class="modal-form">
+        <div id="accountNameGroup"><label for="accountName">Nama</label><input id="accountName" name="name" autocomplete="name" placeholder="Nama kamu" required></div>
+        <label for="accountEmail">Email</label><input id="accountEmail" name="email" type="email" autocomplete="email" placeholder="email@contoh.com" required>
+        <label for="accountPassword">Password</label><input id="accountPassword" name="password" type="password" minlength="8" autocomplete="new-password" placeholder="Minimal 8 karakter" required>
+        <button class="btn btn-primary modal-submit" id="accountSubmit" type="submit">Buat Akun</button>
+        <p class="modal-message" id="accountMessage" aria-live="polite"></p>
+      </form>
+      <p class="modal-switch" id="accountSwitchText">Sudah punya akun? <button type="button" id="switchAccountMode">Sign In</button></p>
+      <p class="demo-disclaimer">Akun diproses oleh backend lokal Rice Rush. Gunakan password yang aman.</p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="cartModal" hidden>
+    <section class="app-modal cart-modal" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Tutup">&times;</button>
+      <h2 id="cartModalTitle"><i class="fas fa-shopping-cart"></i> Keranjang Saya</h2>
+      <p class="modal-intro">Periksa pesananmu sebelum checkout.</p>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">Rp0</strong></div>
+      <button class="btn btn-primary modal-submit" id="checkoutBtn" type="button">Checkout</button>
+      <p class="modal-message" id="cartMessage" aria-live="polite"></p>
+    </section>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
